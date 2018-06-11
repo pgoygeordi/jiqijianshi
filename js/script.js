@@ -120,8 +120,9 @@ var getJobInfo = function (url, successCallback, errorCallback, id) {
    	$.ajax({
          url: url,
          type: "get",
-         async: false,
-         timeout:3000,
+         //async: false,
+         async:true, //set to true will activate the timeout parameters
+         timeout:1000,
          data:{
             "id":1 
          },
